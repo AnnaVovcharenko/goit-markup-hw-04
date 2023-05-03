@@ -176,7 +176,7 @@ ol {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background/people-office\ 1.jpg);
+    url(../images/background/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -232,10 +232,10 @@ ol {
 
 .advantage-item {
   width: calc((100% - 72px) / 4);
-  
 }
-.section-advantage-icon{
+.section-advantage-icon {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding-bottom: 24px;
   padding-top: 24px;
@@ -243,8 +243,7 @@ ol {
   border-radius: 4px;
   background-color: var(--color-cloud);
 }
-.advantage-icon{
-  
+.advantage-icon {
 }
 .advantage-title {
   margin-bottom: 8px;
@@ -295,7 +294,7 @@ ol {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .div-team-item {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 .team-item-img {
 }
@@ -312,22 +311,25 @@ ol {
   gap: 24px;
   justify-content: center;
 }
+.team-media-item {
+  width: 40px;
+  height: 40px;
+}
 .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: var(--color-iris);
-  border-radius:50%;
+  border-radius: 50%;
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--color-ocean);
-
 }
 .social-icon {
- fill:var(--color-cloud);
+  fill: var(--color-cloud);
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!---------------------section 4 customers-------------------!!!!!!!!!!!!!!!*/
 .customers {
@@ -335,6 +337,7 @@ ol {
   padding-top: 120px;
 }
 .container-title {
+  line-height: 1.1;
   margin-bottom: 72px;
 }
 .customers-list {
@@ -343,27 +346,28 @@ ol {
 }
 .customers-item {
   width: calc((100% - 120px) / 6);
+  height: 88px;
 }
-.customers-socials-link{
+.customers-socials-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
-  height: 88px;
-  border: 1px solid #8E8F99;
-border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: var(--color-light-slate);
 }
-.customers-icon{
-  fill: var(--color-light-slate);
+.customers-icon {
+  fill: currentColor; 
 }
 .customers-socials-link:hover .customers-icon,
 .customers-socials-link:focus .customers-icon {
-  fill: var(--color-ocean);
-  
+  color: var(--color-ocean);
 }
 .customers-socials-link:hover,
-.customers-socials-link:focus{
-    border-color:var(--color-ocean);
+.customers-socials-link:focus {
+  border-color: var(--color-ocean);
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!----------------------------footer------------------!!!!!!!!!!!!!!!!!!!!!!!*/
 .footer {
@@ -372,9 +376,13 @@ border-radius: 4px;
 }
 .div-footer {
   display: flex;
+  align-items: baseline;
+}
+.div-footer-logo{
+  margin-right: 120px;
 }
 .div-media {
-  margin-left: 120px;
+  /*margin-left: 120px;*/
 }
 .footer-loga {
   font-family: Raleway, sans-serif;
@@ -411,22 +419,26 @@ border-radius: 4px;
   display: flex;
   gap: 16px;
 }
+.footer-media-item{
+  width: 40px;
+  height: 40px;
+}
 .footer-social-link {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 40px;
-height: 40px;
-background-color: var(--color-iris);
-border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-iris);
+  border-radius: 50%;
 }
 .footer-social-link:hover,
-.footer-social-link:focus{
-  background-color: var(--color-green); 
+.footer-social-link:focus {
+  background-color: var(--color-green);
 }
 
 .footer-social-icon {
-  fill:var(--color-cloud);
+  fill: var(--color-cloud);
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!----------------portfolio-------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -478,14 +490,18 @@ border-radius:50%;
   row-gap: 48px;
   padding-left: 0;
 }
-
+.project-link{
+  display: block; 
+}
 .project-item {
   width: calc((100% - 48px) / 3);
 }
-.project-item:hover {
+.project-link:hover,
+.project-link:focus  {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .project-link:link {
   text-decoration: none;
 }

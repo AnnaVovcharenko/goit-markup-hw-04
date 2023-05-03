@@ -361,8 +361,8 @@ ol {
 .customers-icon {
   fill: currentColor; 
 }
-.customers-socials-link:hover .customers-icon,
-.customers-socials-link:focus .customers-icon {
+.customers-socials-link:hover,
+.customers-socials-link:focus{
   color: var(--color-ocean);
 }
 .customers-socials-link:hover,

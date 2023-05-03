@@ -80,7 +80,7 @@ ol {
   padding: 0 15px 0 15px;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -96,6 +96,8 @@ ol {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-div {
@@ -165,8 +167,19 @@ ol {
 /*!!!!!!!!!!!!!!!!!!!!!----------------------hero-imege------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
 
 .section-hero-image {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background: var(--color-navy-blue);
   padding: 188px 0 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .div-hero {
 }
@@ -194,6 +207,7 @@ ol {
   margin-left: auto;
   margin-right: auto;
   margin-top: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .imege-button:hover,
 .imege-button:focus {
@@ -218,6 +232,19 @@ ol {
 
 .advantage-item {
   width: calc((100% - 72px) / 4);
+  
+}
+.section-advantage-icon{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: var(--color-cloud);
+}
+.advantage-icon{
+  
 }
 .advantage-title {
   margin-bottom: 8px;
@@ -264,7 +291,8 @@ ol {
   background-color: var(--color-white);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  width: 264px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .div-team-item {
   padding: 32px 16px;
@@ -277,13 +305,77 @@ ol {
 }
 .team-item-text {
   text-align: center;
+  margin-bottom: 8px;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!----------------------------footer------------------!!!!!!!!!!!!!!!!!!!!!!!*/
+.team-media-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-iris);
+  border-radius:50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-ocean);
+
+}
+.social-icon {
+ fill:var(--color-cloud);
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!---------------------section 4 customers-------------------!!!!!!!!!!!!!!!*/
+.customers {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.container-title {
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+  width: calc((100% - 120px) / 6);
+}
+.customers-socials-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8E8F99;
+border-radius: 4px;
+}
+.customers-icon{
+  fill: var(--color-light-slate);
+}
+.customers-socials-link:hover .customers-icon,
+.customers-socials-link:focus .customers-icon {
+  fill: var(--color-ocean);
+  
+}
+.customers-socials-link:hover,
+.customers-socials-link:focus{
+    border-color:var(--color-ocean);
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!----------------------------footer------------------!!!!!!!!!!!!!!!!!!!!!!!*/
 .footer {
   background: var(--color-navy-blue);
   padding: 100px 0;
 }
-
+.div-footer {
+  display: flex;
+}
+.div-media {
+  margin-left: 120px;
+}
 .footer-loga {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -306,6 +398,35 @@ ol {
   letter-spacing: 0.02em;
   color: var(--color-cloud);
   max-width: 264px;
+}
+.footer-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+.footer-media-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-link {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+background-color: var(--color-iris);
+border-radius:50%;
+}
+.footer-social-link:hover,
+.footer-social-link:focus{
+  background-color: var(--color-green); 
+}
+
+.footer-social-icon {
+  fill:var(--color-cloud);
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!----------------portfolio-------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -341,6 +462,8 @@ ol {
   color: var(--color-white);
   background-color: var(--color-ocean);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button:active {
   color: var(--color-white);
@@ -359,10 +482,14 @@ ol {
 .project-item {
   width: calc((100% - 48px) / 3);
 }
-
+.project-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .project-link:link {
   text-decoration: none;
 }
+
 .div-project {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
